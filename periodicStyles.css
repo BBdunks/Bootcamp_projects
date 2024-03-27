@@ -1,0 +1,352 @@
+/*Styling of the background*/
+
+body {
+    background-color: linen;
+}
+
+/*Styling of the header section*/
+
+header {
+    background-color: cadetblue;
+    color: azure;
+    padding: 1em;
+    margin-bottom: 5em;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Styling of the grid layout*/
+
+.periodic-table {
+    display: grid;
+    justify-content: center;
+    width: 95vw;
+    grid-template-columns: repeat(18, 5.5%);
+    grid-template-rows: repeat(10, auto);
+    margin:auto
+}
+
+/*Creating media query to hide element names and links for screens under 1000px*/
+
+@media screen and (max-width: 1000px) {
+    a {
+        display: none;
+    }
+
+    b {display: none;}
+}
+
+/*Creating media query to hide the grid for screens under 600px*/
+
+@media screen and (max-width: 600px) {
+    .periodic-table {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3vw;
+    }
+}
+
+/*Creating media query to hide the image for screens 600px and over*/
+
+@media screen and (min-width: 599px) {
+    #p-table {
+        display: none;
+    }
+}
+
+/*Styling of the image*/
+
+img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+}
+
+/*Styling of the links*/
+
+a {
+    text-align: center;
+    font-size: 0.6em;  
+}
+
+/*Styling of the element boxes*/
+
+.element {
+    color: azure;
+    font-size: 1vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 0.3em;
+    border: 1px solid linen;
+}
+
+/*Styling of the keys and colour codes*/
+
+.key {
+    background-color: darkcyan;
+    color: azure;
+    font-size: 1vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 0.3em;
+    border: 1px solid linen;
+    grid-area: 1 / 7 / span 2 / span 2
+}
+
+#key-caption {
+    color: black;
+    font-size: 1vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    grid-column:6;
+    grid-row: 1;
+}
+
+.alkali {
+    background-color: red;
+}
+
+.aearth {
+    background-color: darkorange;
+}
+
+.transition {
+    background-color: goldenrod
+}
+
+.basic {
+    background-color: olivedrab;
+}
+
+.metalloid {
+    background-color: forestgreen;
+}
+
+.nonm {
+    background-color: cadetblue;
+}
+
+.halogen {
+    background-color: darkslateblue;
+}
+
+.noble {
+    background-color: darkviolet;
+}
+
+#lan-key {
+    grid-column: 1 / 3;
+    grid-row: 8;
+    margin-top: 1vh;
+    background-color: deeppink;
+    font-size: 0.8vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: linen;
+    text-align: center;
+    padding-top: 2.5em;
+    padding-right: 0.5em;
+    border: 1px solid linen;
+}
+
+#act-key {
+    grid-column: 1 / 3;
+    grid-row: 9;
+    background-color: crimson;
+    font-size: 0.8vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: linen;
+    text-align: center;
+    padding-top: 2.5em;
+    padding-right: 0.5em;
+    border: 1px solid linen;
+}
+
+/*Fixing the grid and column locations for each element, plus row-specific styling*/
+
+.element .col-1 {
+    grid-column: 1;
+}
+
+.element .col-2 {
+    grid-column: 2;
+}
+
+.element .col-3 {
+    grid-column: 3;
+}
+
+.element .col-4 {
+    grid-column: 4;
+}
+
+.element .col-5 {
+    grid-column: 5;
+}
+
+.element .col-6 {
+    grid-column: 6;
+}
+
+.element .col-7 {
+    grid-column: 7;
+}
+
+.element .col-8 {
+    grid-column: 8;
+}
+
+.element .col-9 {
+    grid-column: 9;
+}
+
+.element .col-10 {
+    grid-column: 10;
+}
+
+.element .col-11 {
+    grid-column: 11;
+}
+
+.element .col-12 {
+    grid-column: 12;
+}
+
+.element .col-13 {
+    grid-column: 13;
+}
+
+.element .col-14 {
+    grid-column: 14;
+}
+
+.element .col-15 {
+    grid-column: 15;
+}
+
+.element .col-16 {
+    grid-column: 16;
+}
+
+.element .col-17 {
+    grid-column: 17;
+}
+
+.element .col-18 {
+    grid-column: 18;
+}
+
+.row-1 {
+    grid-row: 1;
+}
+
+.row-2 {
+    grid-row: 2;
+}
+
+.row-3 {
+    grid-row: 3;
+}
+
+.row-4 {
+    grid-row: 4;
+}
+
+.row-5 {
+    grid-row: 5;
+}
+
+.row-6 {
+    grid-row: 6;
+}
+
+.row-7 {
+    grid-row: 7;
+}
+
+.row-8 {
+    grid-row: 8;
+    margin-top: 1vh;
+    background-color: deeppink;
+}
+
+.row-9 {
+    grid-row: 9;
+    background-color: crimson;
+}
+
+.row-10 {
+    grid-row: 10;
+    margin-top: 2em;
+    color: azure;
+    font-size: 0.8vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border: 1px solid linen;
+    padding: 2em 0.5em;
+}
+
+/*Styling and placement of spacer sections in the grid*/
+
+.blank {
+    background-color: linen;
+}
+
+#row-1-blank-1 {
+    grid-column: 2 / 7;
+    grid-row: 1;
+}
+
+#row-1-blank-2 {
+    grid-column: 9 / 18;
+    grid-row: 1;
+}
+
+#row-2-blank-1 {
+    grid-column: 3 / 7;
+    grid-row: 2;
+}
+
+#row-2-blank-2 {
+    grid-column: 9 / 13;
+    grid-row: 2;
+}
+
+#row-3-blank {
+    grid-column: 3 / 13;
+    grid-row: 3;
+}
+
+
+#row-10-blank {
+    grid-column: 10 / 18;
+    grid-row: 10;
+}
+
+#spacer-1 {
+    font-size: 0.8vw;
+    background-color: deeppink;
+}
+
+#spacer-2 {
+    font-size: 0.8vw;
+    background-color: crimson;
+}
+
+/*Styling of hover effects*/
+
+.element:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
